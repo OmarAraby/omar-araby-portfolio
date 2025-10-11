@@ -15,12 +15,11 @@
     --text-secondary: #b0b0b0;
     --accent: #00d4ff;
     --accent-dark: #0099cc;
-    --gradient: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    --gradient: linear-gradient(135deg, #1e40af 0%, #00d4ff 100%);
     --success: #00ff88;
     --warning: #ffc107;
     --border: rgba(255, 255, 255, 0.1);
 }
-
 [data-theme="light"] {
     --bg-primary: #ffffff;
     --bg-secondary: #f8f9fa;
@@ -432,30 +431,32 @@ section {
     color: var(--accent);
 }
 
-.skill-item {
-    margin-bottom: 1.5rem;
-}
-
-.skill-name {
+.skills-tags {
     display: flex;
-    justify-content: space-between;
-    margin-bottom: 0.5rem;
-    font-weight: 500;
+    flex-wrap: wrap;
+    gap: 0.75rem;
 }
 
-.skill-bar {
-    height: 8px;
+.skill-tag {
+    padding: 0.6rem 1.2rem;
     background: var(--bg-tertiary);
-    border-radius: 50px;
-    overflow: hidden;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+    font-weight: 500;
+    transition: all 0.3s ease;
+    cursor: default;
 }
 
-.skill-progress {
-    height: 100%;
+.skill-tag:hover {
     background: var(--gradient);
-    border-radius: 50px;
-    transition: width 1s ease;
+    color: white;
+    border-color: transparent;
+    transform: translateY(-3px);
+    box-shadow: 0 4px 12px rgba(102, 126, 234, 0.3);
 }
+
 
 /* Experience Timeline */
 .timeline {
