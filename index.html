@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Omar Araby - Junior .NET Backend Developer</title>
+    <meta name="description" content="Junior .NET Backend Developer with experience in ASP.NET Core, Entity Framework, Angular, and modern web technologies.">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <div class="nav-container">
+            <div class="logo">&lt;OmarAraby /&gt;</div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <button class="theme-toggle" id="themeToggle">
+                <i class="fas fa-moon"></i>
+            </button>
+            <button class="mobile-menu-btn" id="mobileMenuBtn">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <div class="hero-tag" data-aos="fade-up">👋 Welcome to my portfolio</div>
+            <h1 data-aos="fade-up" data-aos-delay="100">
+                Hi, I'm <span class="gradient-text">Omar Araby</span><br>
+                Junior .NET Backend Developer
+            </h1>
+            <p data-aos="fade-up" data-aos-delay="200">
+                Building scalable backend systems with ASP.NET Core, Entity Framework, and SQL Server. 
+                Full-stack capable with Angular. Experienced in clean architecture, REST APIs, JWT authentication, 
+                and Agile team collaboration.
+            </p>
+            <div class="status-badge" data-aos="fade-up" data-aos-delay="250">
+                <i class="fas fa-check-circle"></i>
+                Available for Freelance & Full-Time Opportunities
+            </div>
+            <div class="cta-buttons" data-aos="fade-up" data-aos-delay="300">
+                <a href="#projects" class="btn btn-primary">
+                    View My Work <i class="fas fa-arrow-right"></i>
+                </a>
+                <a href="#contact" class="btn btn-secondary">
+                    Get In Touch <i class="fas fa-envelope"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <div class="section-tag">Portfolio</div>
+                <h2 class="section-title">Featured Projects</h2>
+                <p style="color: var(--text-secondary);">Production-ready applications built with modern tech stack</p>
+            </div>
+
+            <div class="projects-grid">
+                <!-- Project 1: Football Live Platform -->
+                <div class="project-card" data-aos="fade-up">
+                    <div class="project-header">
+                        <div class="project-icon">⚽</div>
+                        <div class="project-badge">Production</div>
+                    </div>
+                    <h3>Football Live Platform</h3>
+                    <p>Full-stack sports live score platform with real-time web scraping, caching optimization, and RESTful APIs. Containerized and deployed to production.</p>
+                    <div class="tech-stack">
+                        <span class="tech-tag">Node.js</span>
+                        <span class="tech-tag">Express</span>
+                        <span class="tech-tag">Angular</span>
+                        <span class="tech-tag">Docker</span>
+                        <span class="tech-tag">MongoDB</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/OmarAraby" class="project-link" target="_blank">
+                            <i class="fab fa-github"></i> View Code
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Project 2: Bug Ticketing System -->
+                <div class="project-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="project-header">
+                        <div class="project-icon">🎫</div>
+                    </div>
+                    <h3>Bug Ticketing System API</h3>
+                    <p>RESTful API for bug tracking with JWT authentication, role-based access control, and normalized database schema using Repository Pattern.</p>
+                    <div class="tech-stack">
+                        <span class="tech-tag">ASP.NET Core</span>
+                        <span class="tech-tag">EF Core</span>
+                        <span class="tech-tag">SQL Server</span>
+                        <span class="tech-tag">JWT</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/OmarAraby/Bug-Ticketing-System" class="project-link" target="_blank">
+                            <i class="fab fa-github"></i> View Code
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Project 3: Real-Time Chat -->
+                <div class="project-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="project-header">
+                        <div class="project-icon">💬</div>
+                    </div>
+                    <h3>Real-Time Chat Application</h3>
+                    <p>Live chat system using Blazor Server and SignalR with private/public rooms, ASP.NET Core Identity, and MudBlazor UI.</p>
+                    <div class="tech-stack">
+                        <span class="tech-tag">Blazor Server</span>
+                        <span class="tech-tag">SignalR</span>
+                        <span class="tech-tag">ASP.NET Identity</span>
+                        <span class="tech-tag">MudBlazor</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/OmarAraby/BlazorChatApp" class="project-link" target="_blank">
+                            <i class="fab fa-github"></i> View Code
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Project 4: HerafyHub -->
+                <div class="project-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="project-header">
+                        <div class="project-icon">🛠️</div>
+                    </div>
+                    <h3>HerafyHub E-commerce Platform</h3>
+                    <p>Full-stack platform connecting skilled workers with customers. Features product CRUD, cart, orders, Paymob payment integration, and JWT auth.</p>
+                    <div class="tech-stack">
+                        <span class="tech-tag">Node.js</span>
+                        <span class="tech-tag">Express</span>
+                        <span class="tech-tag">Angular</span>
+                        <span class="tech-tag">MongoDB</span>
+                        <span class="tech-tag">Paymob</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/mohamedAbdelwahabali5/HerafyHub_API" class="project-link" target="_blank">
+                            <i class="fab fa-github"></i> View Code
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Project 5: Inventory Management System -->
+                <div class="project-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="project-header">
+                        <div class="project-icon">📦</div>
+                        <div class="project-badge" style="background: rgba(255, 193, 7, 0.1); border-color: rgba(255, 193, 7, 0.3); color: var(--warning);">ITI Workshop</div>
+                    </div>
+                    <h3>Inventory Management System</h3>
+                    <p>Low-code business solution using Microsoft Power Platform. Includes Canvas Apps, Power Pages portal, automated workflows, BI dashboards, and Copilot chatbot.</p>
+                    <div class="tech-stack">
+                        <span class="tech-tag">Power Apps</span>
+                        <span class="tech-tag">Power Pages</span>
+                        <span class="tech-tag">Power Automate</span>
+                        <span class="tech-tag">Power BI</span>
+                        <span class="tech-tag">Copilot Studio</span>
+                    </div>
+                </div>
+
+                <!-- Project 6: Covido -->
+                <div class="project-card" data-aos="fade-up" data-aos-delay="500">
+                    <div class="project-header">
+                        <div class="project-icon">🏥</div>
+                        <div class="project-badge" style="background: rgba(255, 193, 7, 0.1); border-color: rgba(255, 193, 7, 0.3); color: var(--warning);">Graduation Project</div>
+                    </div>
+                    <h3>Covido - COVID-19 Tracker</h3>
+                    <p>Django web application to track and forecast COVID-19 cases using ML/DL. Grade: A (Excellent). Features hospital finder and trend prediction.</p>
+                    <div class="tech-stack">
+                        <span class="tech-tag">Django</span>
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">Machine Learning</span>
+                        <span class="tech-tag">Deep Learning</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/OmarAraby/Covido" class="project-link" target="_blank">
+                            <i class="fab fa-github"></i> View Code
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <div class="section-tag">Expertise</div>
+                <h2 class="section-title">Technical Skills</h2>
+            </div>
+
+            <div class="skills-grid">
+                <div class="skill-category" data-aos="fade-up">
+                    <h3><i class="fas fa-code"></i> Backend Development</h3>
+                    <div class="skill-item">
+                        <div class="skill-name">
+                            <span>C# & .NET</span>
+                            <span>90%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 90%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-name">
+                            <span>ASP.NET Core Web API</span>
+                            <span>85%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 85%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-name">
+                            <span>Entity Framework Core</span>
+                            <span>85%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 85%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-name">
+                            <span>RESTful APIs & LINQ</span>
+                            <span>90%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 90%"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category" data-aos="fade-up" data-aos-delay="100">
+                    <h3><i class="fas fa-database"></i> Database & Architecture</h3>
+                    <div class="skill-item">
+                        <div class="skill-name">
+                            <span>SQL Server & T-SQL</span>
+                            <span>85%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 85%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-name">
+                            <span>MongoDB & NoSQL</span>
+                            <span>75%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 75%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-name">
+                            <span>Clean Architecture & SOLID</span>
+                            <span>80%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 80%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-name">
+                            <span>Repository Pattern & DI</span>
+                            <span>85%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 85%"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category" data-aos="fade-up" data-aos-delay="200">
+                    <h3><i class="fas fa-laptop-code"></i> Frontend & Full-Stack</h3>
+                    <div class="skill-item">
+                        <div class="skill-name">
+                            <span>Angular & TypeScript</span>
+                            <span>80%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 80%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-name">
+                            <span>Blazor Server</span>
+                            <span>75%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 75%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-name">
+                            <span>RxJS & SignalR</span>
+                            <span>75%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 75%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-name">
+                            <span>HTML/CSS/Bootstrap</span>
+                            <span>85%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 85%"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category" data-aos="fade-up" data-aos-delay="300">
+                    <h3><i class="fas fa-tools"></i> DevOps & Tools</h3>
+                    <div class="skill-item">
+                        <div class="skill-name">
+                            <span>Git & GitHub</span>
+                            <span>85%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 85%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-name">
+                            <span>Docker</span>
+                            <span>70%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 70%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-name">
+                            <span>Postman & API Testing</span>
+                            <span>90%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 90%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-name">
+                            <span>Azure & Power Platform</span>
+                            <span>65%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 65%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <div class="section-tag">Journey</div>
+                <h2 class="section-title">Experience & Education</h2>
+            </div>
+
+            <div class="timeline">
+                <!-- ITI Training -->
+                <div class="timeline-item" data-aos="fade-up">
+                    <div class="timeline-content">
+                        <div class="timeline-date">
+                            <i class="fas fa-calendar"></i>
+                            10/2024 - 07/2025
+                        </div>
+                        <h3>.NET Backend Developer Trainee</h3>
+                        <h4>Information Technology Institute (ITI) - Ismailia, Egypt</h4>
+                        <p style="color: var(--text-secondary); margin-bottom: 1rem;">
+                            9-Month Professional Training Program - Professional Development and BI-Infused CRM
+                        </p>
+                        <ul>
+                            <li>Built backend systems using ASP.NET Core Web API and Entity Framework Core</li>
+                            <li>Designed N-Tier architecture with Repository Pattern + Unit of Work</li>
+                            <li>Implemented JWT authentication and ASP.NET Identity authorization</li>
+                            <li>Designed relational schemas and queries using SQL Server + T-SQL</li>
+                            <li>Collaborated using Agile methodology and Git/GitHub branching workflow</li>
+                            <li>Applied SOLID principles and clean code practices</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Football Live Platform -->
+                <div class="timeline-item" data-aos="fade-up" data-aos-delay="100">
+                    <div class="timeline-content">
+                        <div class="timeline-date">
+                            <i class="fas fa-calendar"></i>
+                            03/2025 - 06/2025
+                        </div>
+                        <h3>Freelance Software Developer - Remote</h3>
+                        <h4>Football Live Platform (Production Project)</h4>
+                        <ul>
+                            <li>Built full-stack sports live score platform using Node.js/Express and Angular</li>
+                            <li>Integrated real-time web scraping with caching optimization for performance</li>
+                            <li>Implemented authentication, reusable services, and RESTful APIs</li>
+                            <li>Containerized with Docker and deployed backend on Railway & MongoDB Atlas, frontend on Netlify</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Huawei -->
+                <div class="timeline-item" data-aos="fade-up" data-aos-delay="200">
+                    <div class="timeline-content">
+                        <div class="timeline-date">
+                            <i class="fas fa-calendar"></i>
+                            09/2024 - 10/2024
+                        </div>
+                        <h3>FO Assistant Engineer</h3>
+                        <h4>Huawei - Giza, Egypt</h4>
+                        <ul>
+                            <li>Handled incident analysis & SLA tracking within enterprise environment</li>
+                            <li>Collaborated with cross-functional teams ensuring system stability</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- DEPI Scholarship -->
+                <div class="timeline-item" data-aos="fade-up" data-aos-delay="300">
+                    <div class="timeline-content">
+                        <div class="timeline-date">
+                            <i class="fas fa-calendar"></i>
+                            03/2024 - 09/2024
+                        </div>
+                        <h3>DEPI Scholarship - React Developer Track</h3>
+                        <h4>Ministry of Communications and Information Technology - Suez, Egypt</h4>
+                        <p style="color: var(--text-secondary);">
+                            Selected for intensive training program in React development and modern frontend technologies.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Military Service -->
+                <div class="timeline-item" data-aos="fade-up" data-aos-delay="400">
+                    <div class="timeline-content">
+                        <div class="timeline-date">
+                            <i class="fas fa-check-circle"></i>
+                            2023
+                        </div>
+                        <h3>Military Service</h3>
+                        <h4>Egyptian Armed Forces</h4>
+                        <p style="color: var(--success); font-weight: 600;">
+                            ✓ Completed
+                        </p>
+                    </div>
+                </div>
+
+                <!-- University -->
+                <div class="timeline-item" data-aos="fade-up" data-aos-delay="500">
+                    <div class="timeline-content">
+                        <div class="timeline-date">
+                            <i class="fas fa-calendar"></i>
+                            09/2017 - 06/2021
+                        </div>
+                        <h3>Bachelor's Degree in Computer Science</h3>
+                        <h4>Suez University - Suez, Egypt</h4>
+                        <p style="color: var(--text-secondary);">
+                            GPA: 3.17 out of 4.0 (Very Good)
+                        </p>
+                        <p style="color: var(--text-secondary);">
+                            <strong>Graduation Project:</strong> "Covido" - COVID-19 tracking web application built using Django Framework. <strong>Grade: A (Excellent)</strong>
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Achievement -->
+                <div class="timeline-item" data-aos="fade-up" data-aos-delay="600">
+                    <div class="timeline-content">
+                        <div class="timeline-date">
+                            <i class="fas fa-trophy"></i>
+                            2020
+                        </div>
+                        <h3>Silver Medal - Huawei ICT Competition</h3>
+                        <h4>Huawei ICT Academy - Egypt</h4>
+                        <p style="color: var(--text-secondary);">
+                            Awarded Silver Medal in Huawei ICT Competition Egypt 2020
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <div class="section-tag">Get In Touch</div>
+                <h2 class="section-title">Let's Work Together</h2>
+                <p style="color: var(--text-secondary);">Available for freelance projects and full-time opportunities</p>
+            </div>
+
+            <div class="contact-grid">
+                <div class="contact-card" data-aos="fade-up">
+                    <div class="contact-icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <h3>Email</h3>
+                    <a href="mailto:omar_araby7@outlook.com">omar_araby7@outlook.com</a>
+                </div>
+
+                <div class="contact-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="contact-icon">
+                        <i class="fas fa-phone"></i>
+                    </div>
+                    <h3>Phone</h3>
+                    <a href="tel:+201128285281">+20 112 828 5281</a>
+                </div>
+
+                <div class="contact-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="contact-icon">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <h3>Location</h3>
+                    <p style="color: var(--text-secondary);">Cairo, Egypt</p>
+                </div>
+
+                <div class="contact-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="contact-icon">
+                        <i class="fab fa-linkedin"></i>
+                    </div>
+                    <h3>LinkedIn</h3>
+                    <a href="https://www.linkedin.com/in/omar-araby" target="_blank">linkedin.com/in/omar-araby</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="social-links">
+                <a href="https://github.com/OmarAraby" target="_blank" title="GitHub">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/omar-araby" target="_blank" title="LinkedIn">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="mailto:omar_araby7@outlook.com" title="Email">
+                    <i class="fas fa-envelope"></i>
+                </a>
+            </div>
+            <p style="color: var(--text-secondary); margin-bottom: 0.5rem;">
+                &copy; 2025 Omar Araby. All rights reserved.
+            </p>
+            <p style="color: var(--text-secondary); font-size: 0.9rem;">
+            </p>
+        </div>
+    </footer>
+
+<script src="script.js"></script>
+</body>
+</html>
