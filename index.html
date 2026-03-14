@@ -1,18 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Omar Araby - Software Engineer</title>
-    <meta name="description" content="Junior .NET Backend Developer with experience in ASP.NET Core, Entity Framework, Angular, and modern web technologies.">
+    <meta name="description"
+        content="Junior .NET Backend Developer with experience in ASP.NET Core, Entity Framework, Angular, and modern web technologies.">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <!-- Navigation -->
     <nav>
         <div class="nav-container">
-            <div class="logo">&lt;OmarAraby /&gt;</div>
+            <a href="#" class="creative-logo">
+                <span class="logo-bracket">{</span>
+                <span class="logo-text">Omar<span class="logo-highlight">Araby</span></span>
+                <span class="logo-bracket">}</span>
+                <span class="logo-cursor"></span>
+            </a>
             <ul class="nav-links">
                 <li><a href="#home">Home</a></li>
                 <li><a href="#projects">Projects</a></li>
@@ -31,28 +39,67 @@
 
     <!-- Hero Section -->
     <section class="hero" id="home">
-        <div class="hero-content">
-            <div class="hero-tag" data-aos="fade-up">👋 Welcome to my portfolio</div>
-            <h1 data-aos="fade-up" data-aos-delay="100">
-                Hi, I'm <span class="gradient-text">Omar Araby</span><br>
-                Software Engineer
-            </h1>
-            <p data-aos="fade-up" data-aos-delay="200">
-                Building scalable backend systems with ASP.NET Core, Entity Framework, and SQL Server. 
-                Full-stack capable with Angular. Experienced in clean architecture, REST APIs, JWT authentication, 
-                and Agile team collaboration.
-            </p>
-            <div class="status-badge" data-aos="fade-up" data-aos-delay="250">
-                <i class="fas fa-check-circle"></i>
-                Available for Freelance & Full-Time Opportunities
+        <div class="hero-grid">
+            <div class="hero-text-content">
+                <div class="hero-tag" data-aos="fade-up">👋 Welcome to my workspace</div>
+                <h1 data-aos="fade-up" data-aos-delay="100">
+                    Hi, I'm <span class="gradient-text">Omar Araby</span><br>
+                    Software Engineer
+                </h1>
+                <p data-aos="fade-up" data-aos-delay="200">
+                    Building robust and scalable backend systems with ASP.NET Core, Entity Framework, and SQL Server.
+                    Full-stack capable, focused on clean architecture and high-performance APIs.
+                </p>
+                <div class="status-badge" data-aos="fade-up" data-aos-delay="250">
+                    <span class="pulse-dot"></span>
+                    Available for Freelance & Full-Time Opportunities
+                </div>
+                <div class="cta-buttons" data-aos="fade-up" data-aos-delay="300">
+                    <a href="#projects" class="btn btn-primary">
+                        View My Work <i class="fas fa-arrow-right"></i>
+                    </a>
+                    <a href="#contact" class="btn btn-secondary">
+                        Get In Touch <i class="fas fa-terminal"></i>
+                    </a>
+                </div>
             </div>
-            <div class="cta-buttons" data-aos="fade-up" data-aos-delay="300">
-                <a href="#projects" class="btn btn-primary">
-                    View My Work <i class="fas fa-arrow-right"></i>
-                </a>
-                <a href="#contact" class="btn btn-secondary">
-                    Get In Touch <i class="fas fa-envelope"></i>
-                </a>
+
+            <!-- Floating Code Terminal Area -->
+            <div class="hero-visual" data-aos="fade-left" data-aos-delay="400">
+                <div class="code-window">
+                    <div class="code-header">
+                        <div class="mac-btns">
+                            <span class="close-btn"></span>
+                            <span class="min-btn"></span>
+                            <span class="max-btn"></span>
+                        </div>
+                        <div class="code-title">DeveloperProvider.cs</div>
+                    </div>
+                    <div class="code-body">
+                        <pre><code><span class="keyword">public class</span> <span class="type">OmarAraby</span> : <span class="type">ISoftwareEngineer</span>
+{
+    <span class="keyword">public string</span> Role { <span class="keyword">get</span>; } = <span class="string">"Backend Engineer"</span>;
+    <span class="keyword">public string</span>[] Skills = <span class="keyword">new</span>[] 
+    { 
+        <span class="string">"C#"</span>, <span class="string">".NET Core"</span>,<span class="string">"LINQ"</span>,
+        <span class="string">"Python"</span>, <span class="string">"Django"</span>,
+        <span class="string">"Node.js"</span>, <span class="string">"Express"</span>,
+        <span class="string">"SQL"</span>, <span class="string">"Angular"</span>
+    };
+
+    <span class="keyword">public async</span> <span class="type">Task</span>&lt;<span class="type">Result</span>&gt; BuildSolutionAsync()
+    {
+        <span class="keyword">await</span> DesignCleanArchitecture();
+        <span class="keyword">await</span> WriteScalableCode();
+        <span class="keyword">return</span> <span class="type">Result</span>.Success();
+    }
+}</code><span class="typing-cursor">|</span></pre>
+                    </div>
+                </div>
+
+                <!-- Floating Decorative Elements -->
+                <div class="floating-shape shape-1"></div>
+                <div class="floating-shape shape-2"></div>
             </div>
         </div>
     </section>
@@ -74,7 +121,8 @@
                         <div class="project-badge">Production</div>
                     </div>
                     <h3>Football Live Platform</h3>
-                    <p>Full-stack sports live score platform with real-time web scraping, caching optimization, and RESTful APIs. Containerized and deployed to production.</p>
+                    <p>Full-stack sports live score platform with real-time web scraping, caching optimization, and
+                        RESTful APIs. Containerized and deployed to production.</p>
                     <div class="tech-stack">
                         <span class="tech-tag">Node.js</span>
                         <span class="tech-tag">Express</span>
@@ -95,7 +143,8 @@
                         <div class="project-icon">🎫</div>
                     </div>
                     <h3>Bug Ticketing System API</h3>
-                    <p>RESTful API for bug tracking with JWT authentication, role-based access control, and normalized database schema using Repository Pattern.</p>
+                    <p>RESTful API for bug tracking with JWT authentication, role-based access control, and normalized
+                        database schema using Repository Pattern.</p>
                     <div class="tech-stack">
                         <span class="tech-tag">ASP.NET Core</span>
                         <span class="tech-tag">EF Core</span>
@@ -103,7 +152,8 @@
                         <span class="tech-tag">JWT</span>
                     </div>
                     <div class="project-links">
-                        <a href="https://github.com/OmarAraby/Bug-Ticketing-System" class="project-link" target="_blank">
+                        <a href="https://github.com/OmarAraby/Bug-Ticketing-System" class="project-link"
+                            target="_blank">
                             <i class="fab fa-github"></i> View Code
                         </a>
                     </div>
@@ -115,7 +165,8 @@
                         <div class="project-icon">💬</div>
                     </div>
                     <h3>Real-Time Chat Application</h3>
-                    <p>Live chat system using Blazor Server and SignalR with private/public rooms, ASP.NET Core Identity, and MudBlazor UI.</p>
+                    <p>Live chat system using Blazor Server and SignalR with private/public rooms, ASP.NET Core
+                        Identity, and MudBlazor UI.</p>
                     <div class="tech-stack">
                         <span class="tech-tag">Blazor Server</span>
                         <span class="tech-tag">SignalR</span>
@@ -135,7 +186,8 @@
                         <div class="project-icon">🛠️</div>
                     </div>
                     <h3>HerafyHub E-commerce Platform</h3>
-                    <p>Full-stack platform connecting skilled workers with customers. Features product CRUD, cart, orders, Paymob payment integration, and JWT auth.</p>
+                    <p>Full-stack platform connecting skilled workers with customers. Features product CRUD, cart,
+                        orders, Paymob payment integration, and JWT auth.</p>
                     <div class="tech-stack">
                         <span class="tech-tag">Node.js</span>
                         <span class="tech-tag">Express</span>
@@ -144,7 +196,8 @@
                         <span class="tech-tag">Paymob</span>
                     </div>
                     <div class="project-links">
-                        <a href="https://github.com/mohamedAbdelwahabali5/HerafyHub_API" class="project-link" target="_blank">
+                        <a href="https://github.com/mohamedAbdelwahabali5/HerafyHub_API" class="project-link"
+                            target="_blank">
                             <i class="fab fa-github"></i> View Code
                         </a>
                     </div>
@@ -154,10 +207,13 @@
                 <div class="project-card" data-aos="fade-up" data-aos-delay="400">
                     <div class="project-header">
                         <div class="project-icon">📦</div>
-                        <div class="project-badge" style="background: rgba(255, 193, 7, 0.1); border-color: rgba(255, 193, 7, 0.3); color: var(--warning);">ITI Workshop</div>
+                        <div class="project-badge"
+                            style="background: rgba(255, 193, 7, 0.1); border-color: rgba(255, 193, 7, 0.3); color: var(--warning);">
+                            ITI Workshop</div>
                     </div>
                     <h3>Inventory Management System</h3>
-                    <p>Low-code business solution using Microsoft Power Platform. Includes Canvas Apps, Power Pages portal, automated workflows, BI dashboards, and Copilot chatbot.</p>
+                    <p>Low-code business solution using Microsoft Power Platform. Includes Canvas Apps, Power Pages
+                        portal, automated workflows, BI dashboards, and Copilot chatbot.</p>
                     <div class="tech-stack">
                         <span class="tech-tag">Power Apps</span>
                         <span class="tech-tag">Power Pages</span>
@@ -171,10 +227,13 @@
                 <div class="project-card" data-aos="fade-up" data-aos-delay="500">
                     <div class="project-header">
                         <div class="project-icon">🏥</div>
-                        <div class="project-badge" style="background: rgba(255, 193, 7, 0.1); border-color: rgba(255, 193, 7, 0.3); color: var(--warning);">Graduation Project</div>
+                        <div class="project-badge"
+                            style="background: rgba(255, 193, 7, 0.1); border-color: rgba(255, 193, 7, 0.3); color: var(--warning);">
+                            Graduation Project</div>
                     </div>
                     <h3>Covido - COVID-19 Tracker</h3>
-                    <p>Django web application to track and forecast COVID-19 cases using ML/DL. Grade: A (Excellent). Features hospital finder and trend prediction.</p>
+                    <p>Django web application to track and forecast COVID-19 cases using ML/DL. Grade: A (Excellent).
+                        Features hospital finder and trend prediction.</p>
                     <div class="tech-stack">
                         <span class="tech-tag">Django</span>
                         <span class="tech-tag">Python</span>
@@ -292,10 +351,14 @@
                         <h3>Full Stack .NET & Angular Developer </h3>
                         <h4> Roaya (IT Services and IT Consulting) - Cairo, Egypt</h4>
                         <ul>
-                            <li>Working as part of the development team on multiple ongoing projects across different business domains.</li>
-                            <li>Developing and maintaining RESTful APIs using ASP.NET Core with clean architecture and layered structure.</li>
-                            <li>Building and enhancing Angular components, modules, services, and state handling using RxJS and Observables.</li>
-                            <li>Participating in code reviews, debugging, and performance optimization across backend and frontend modules</li>
+                            <li>Working as part of the development team on multiple ongoing projects across different
+                                business domains.</li>
+                            <li>Developing and maintaining RESTful APIs using ASP.NET Core with clean architecture and
+                                layered structure.</li>
+                            <li>Building and enhancing Angular components, modules, services, and state handling using
+                                RxJS and Observables.</li>
+                            <li>Participating in code reviews, debugging, and performance optimization across backend
+                                and frontend modules</li>
                             <li>Collaborated using Agile methodology and Git/GitHub branching workflow</li>
                         </ul>
                     </div>
@@ -335,7 +398,8 @@
                             <li>Built full-stack sports live score platform using Node.js/Express and Angular</li>
                             <li>Integrated real-time web scraping with caching optimization for performance</li>
                             <li>Implemented authentication, reusable services, and RESTful APIs</li>
-                            <li>Containerized with Docker and deployed backend on Railway & MongoDB Atlas, frontend on Netlify</li>
+                            <li>Containerized with Docker and deployed backend on Railway & MongoDB Atlas, frontend on
+                                Netlify</li>
                         </ul>
                     </div>
                 </div>
@@ -366,11 +430,12 @@
                         <h3>DEPI Scholarship - React Developer Track</h3>
                         <h4>Ministry of Communications and Information Technology - Suez, Egypt</h4>
                         <p style="color: var(--text-secondary);">
-                            Selected for intensive training program in React & Node.js development and modern frontend technologies.
+                            Selected for intensive training program in React & Node.js development and modern frontend
+                            technologies.
                         </p>
                     </div>
                 </div>
-                  <!-- Ghazal Trading Investment -->
+                <!-- Ghazal Trading Investment -->
                 <div class="timeline-item" data-aos="fade-up" data-aos-delay="200">
                     <div class="timeline-content">
                         <div class="timeline-date">
@@ -379,13 +444,17 @@
                         </div>
                         <h3>Back-end Developer - Hybird</h3>
                         <h4>Ghazal Trading & Investment - 10th of Ramadan, Egypt</h4>
-                       <ul>
-                            <li>Developed and maintained internal business systems to support financial and real estate operations.</li>
-                            <li>Built backend features using Django framework with a focus on business logic implementation.</li>
-                            <li>Customized Django Admin Panel to manage company data (clients, contracts, property records).</li>
+                        <ul>
+                            <li>Developed and maintained internal business systems to support financial and real estate
+                                operations.</li>
+                            <li>Built backend features using Django framework with a focus on business logic
+                                implementation.</li>
+                            <li>Customized Django Admin Panel to manage company data (clients, contracts, property
+                                records).</li>
                             <li>Designed and optimized relational database models using PostgreSQL.</li>
                             <li>Implemented authentication, permissions, and data validation securely.</li>
-                            <li>Collaborated with business stakeholders to analyze requirements and deliver solutions.</li>
+                            <li>Collaborated with business stakeholders to analyze requirements and deliver solutions.
+                            </li>
                             <li>Used Git for version control and worked in a structured development workflow.</li>
                         </ul>
 
@@ -421,7 +490,8 @@
                             GPA: 3.17 out of 4.0 (Very Good)
                         </p>
                         <p style="color: var(--text-secondary);">
-                            <strong>Graduation Project:</strong> "Covido" - COVID-19 tracking web application built using Django Framework. <strong>Grade: A (Excellent)</strong>
+                            <strong>Graduation Project:</strong> "Covido" - COVID-19 tracking web application built
+                            using Django Framework. <strong>Grade: A (Excellent)</strong>
                         </p>
                     </div>
                 </div>
@@ -450,7 +520,8 @@
             <div class="section-header" data-aos="fade-up">
                 <div class="section-tag">Get In Touch</div>
                 <h2 class="section-title">Let's Work Together</h2>
-                <p style="color: var(--text-secondary);">Available for freelance projects and full-time opportunities</p>
+                <p style="color: var(--text-secondary);">Available for freelance projects and full-time opportunities
+                </p>
             </div>
 
             <div class="contact-grid">
@@ -511,6 +582,7 @@
         </div>
     </footer>
 
-<script src="script.js"></script>
+    <script src="script.js"></script>
 </body>
+
 </html>
